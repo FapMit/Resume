@@ -65,6 +65,7 @@ body {
 .about__block_up { 
     margin-left: 141px;
     max-width: 1440px;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;

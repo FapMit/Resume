@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/stye.css">
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +25,7 @@
         <header class="header">
             <img src="./images/lines1.svg" alt="" class="header__lines">
             <h1 class="header__logo">Freelancer</h1>
-            <nav class="header__nav">
+            <nav class="header__nav" id="header__nav">
                 <ul class="header__list">
                     <li class="header__item"><a href="." class="header__link">Home</a></li>
                     <li class="header__item"><a href="#about" class="header__link">About</a></li>
@@ -36,7 +39,7 @@
 
         <main>
             <section class="about" id="about">
-                <div class="about__block_up">
+                <div class="about__information">
                     <div class="about__text">
                         <h1 class="about__text_title">Hy! I Am <br> Shamima Akhi</h1>
                         <p class="about__text_discription">Service Line helps you to turn your complex multisite,
@@ -49,7 +52,7 @@
                         <img src="./images/lines2.svg" alt="" class="about__lines">
                     </div>
                 </div>
-                <div class="about__block_down">
+                <div class="about__numbers">
                     <ul class="about__list">
                         <li class="about__item"><span class="about__span">258+</span>
                             <h2 class="about__title">Positive Feedback</h2>
@@ -72,158 +75,164 @@
                     </ul>
                 </div>
             </section>
+
             <section class="services" id="services">
-                <div class="services__block_up">
-                    <div class="services__information">
-                        <div class="services__main">
-                            <div class="services__left">
-                                <h1 class="services__title">best services</h1>
-                                <h2 class="services__benefits">Benefits You get when <br> using our services</h2>
+                <div class="services__information">
+                    <div class="services__left">
+                        <h1 class="services__title">best services</h1>
+                        <h2 class="services__benefits">Benefits You get when <br> using our services</h2>
+                    </div>
+                    <div class="services__right">   
+                        <p class="services__quote">While we can customize your needs plan to suit your <br>
+                            needs,
+                            most clients schedule regular interior services</p>
+                    </div>
+                </div>
+                <div class="services__description">
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <img src="./images/BQ.svg" alt="" class="services__item_image">
+                            <div class="services__item_description">
+                                <span class="services__item_title">Best Quality</span><br>
+                                It starts with our fun and easy project questionnaire where you'll provide
+                                details.
                             </div>
-                            <div class="services__right">
-                                <p class="services__quote">While we can customize your needs plan to suit your <br> needs,
-                                    most clients schedule regular interior services</p>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__verticalline"></div>
+                        </li>
+                        <li class="services__item">
+                            <img src="./images/ED.svg" alt="" class="services__item_image">
+                            <div class="services__item_description">
+                                <span class="services__item_title">Excellent Design</span><br>
+                                After getting matched, your designer will message with you to collaborate on
+                                ideas.
+                            </div>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__verticalline"></div>
+                        </li>
+                        <li class="services__item">
+                            <img src="./images/GS.svg" alt="" class="services__item_image">
+                            <div class="services__item_description">
+                                <span class="services__item_title">Guaranteed Shipping</span><br>
+                                Designer incorporates feedback into the final room design and layout with.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services__title_card">
+                    <h1 class="title_h1">What we have for you</h1>
+                    <h2 class="title_h2">Some of the services we provide to meet your needs</h2>
+                </div>
+                <div class="services__cards">
+                    <div class="services__card">
+                        <div class="services__card_image">
+                            <div class="ellipse"><img src="./images/CorpWebDes.svg" alt="" class="services__card_img"></div>
+                        </div>
+                        <div class="services__card_description">
+                            <div class="services__card_title">Corporate Web Design</div>
+                            <div class="services__card_text">A marketing tool that is a complete solution
+                                for bringing your company within reach of
+                                your target market; Wrapped up in great
+                                UI/UX design and informative contents
+                                about your products or services.</div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__cards_image">
+                            <div class="ellipse"><img src="./images/IlustDes.svg" alt="" class="services__card_img">
                             </div>
                         </div>
-                        <div class="services__description">
-                            <ul class="services__list">
-                                <li class="services__item">
-                                    <img src="./images/BQ.svg" alt="" class="services__item_image">
-                                    <div class="services__item_description">
-                                        <span class="services__item_title">Best Quality</span><br>
-                                        It starts with our fun and easy project questionnaire where you'll provide details.
-                                    </div>
-                                </li>
-                                <li class="services__item">
-                                    <div class="services__verticalline"></div>
-                                </li>
-                                <li class="services__item">
-                                    <img src="./images/ED.svg" alt="" class="services__item_image">
-                                    <div class="services__item_description">
-                                        <span class="services__item_title">Excellent Design</span><br>
-                                        After getting matched, your designer will message with you to collaborate on ideas.
-                                    </div>
-                                </li>
-                                <li class="services__item">
-                                    <div class="services__verticalline"></div>
-                                </li>
-                                <li class="services__item">
-                                    <img src="./images/GS.svg" alt="" class="services__item_image">
-                                    <div class="services__item_description">
-                                        <span class="services__item_title">Guaranteed Shipping</span><br>
-                                        Designer incorporates feedback into the final room design and layout with.
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="services__card_description">
+                            <h1 class="services__card_title">Ilustration Design</h1>
+                            <p class="services__card_text">Illustrations can be used to give a complete
+                                picture of the content of a work. we are
+                                ready to help you create good and
+                                meaningful illustrations for you</p>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__cards_image">
+                            <div class="ellipse"><img src="./images/DevelopSys.svg" alt="" class="services__card_img">
+                            </div>
+                        </div>
+                        <div class="services__card_description">
+                            <h1 class="services__card_title">Development System</h1>
+                            <p class="services__card_text">Sell more products using a user-friendly checkout flow
+                                and
+                                simplify your sales operation with our powerful CMS. Online -payment, membership
+                                to
+                                invoice, and label printing are ready in the box.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__cards_image">
+                            <div class="ellipse"><img src="./images/WebMainServ.svg" alt="" class="services__card_img"></div>
+                        </div>
+                        <div class="services__card_description">
+                            <h1 class="services__card_title">Web Maintenance Service</h1>
+                            <p class="services__card_text">Our mission is to make your web project last for years.
+                                We
+                                want you to have peace-of-mind while running your web project knowing that our
+                                support is behind it, so you can focus on what you</p>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__cards_image">
+                            <div class="ellipse"><img src="./images/SEOserv.svg" alt="" class="services__card_img"></div>
+                        </div>
+                        <div class="services__card_description">
+                            <h1 class="services__card_title">SEO Service</h1>
+                            <p class="services__card_text">Make your company's website more competitive on Google's
+                                search result by using your best keywords set. We also analyze and audit your
+                                current site before optimizing it.</p>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__cards_image">
+                            <div class="ellipse"><img src="./images/UI_UX.svg" alt="" class="services__card_img"></div>
+                        </div>
+                        <div class="services__card_description">
+                            <h1 class="services__card_title">UI/UX Design</h1>
+                            <p class="services__card_text">UI design on a product aims to beautify the appearance of
+                                the
+                                product. While the UX design is designed to provide a pleasant experience when
+                                using
+                                the product.</p>
                         </div>
                     </div>
                 </div>
-                <div class="services__block_down">
-                    <div class="down__title">
-                        <h1 class="down_h1">What we have for you</h1>
-                        <h2 class="down_h2">Some of the services we provide to meet your needs</h2>
-                    </div>
-                    <div class="down__cards">
-                        <div class="down__block">
-                            <div class="down__item">
-                                <div class="down__item_image">
-                                    <div class="ellipse"><img src="./images/CorpWebDes.svg" alt="" class="down__img"></div>
-                                </div>
-                                <div class="down__item_description">
-                                    <div class="down__item_title">Corporate Web Design</div>
-                                    <div class="down__item_text">A marketing tool that is a complete solution
-                                        for bringing your company within reach of
-                                        your target market; Wrapped up in great
-                                        UI/UX design and informative contents
-                                        about your products or services.</div>
-                                </div>
-                            </div>
-                            <div class="down__item">
-                                <div class="down__item_image">
-                                    <div class="ellipse"><img src="./images/IlustDes.svg" alt="" class="down__img"></div>
-                                </div>
-                                <div class="down__item_description">
-                                    <h1 class="down__item_title">Ilustration Design</h1>
-                                    <p class="down__item_text">Illustrations can be used to give a complete
-                                        picture of the content of a work. we are
-                                        ready to help you create good and
-                                        meaningful illustrations for you</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="down__block">
-                            <div class="down__item">
-                                <div class="down__item_image">
-                                    <div class="ellipse"><img src="./images/DevelopSys.svg" alt="" class="down__img"></div>
-                                </div>
-                                <div class="down__item_description">
-                                    <h1 class="down__item_title">Development System</h1>
-                                    <p class="down__item_text">Sell more products using a user-friendly checkout flow and
-                                        simplify your sales operation with our powerful CMS. Online -payment, membership to
-                                        invoice, and label printing are ready in the box.
-                                </div>
-                                </p>
-                            </div>
-                            <div class="down__item">
-                                <div class="down__item_image">
-                                    <div class="ellipse"><img src="./images/WebMainServ.svg" alt="" class="down__img"></div>
-                                </div>
-                                <div class="down__item_description">
-                                    <h1 class="down__item_title">Web Maintenance Service</h1>
-                                    <p class="down__item_text">Our mission is to make your web project last for years. We
-                                        want you to have peace-of-mind while running your web project knowing that our
-                                        support is behind it, so you can focus on what you</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="down__block">
-                            <div class="down__item">
-                                <div class="down__item_image">
-                                    <div class="ellipse"><img src="./images/SEOserv.svg" alt="" class="down__img"></div>
-                                </div>
-                                <div class="down__item_description">
-                                    <h1 class="down__item_title">SEO Service</h1>
-                                    <p class="down__item_text">Make your company's website more competitive on Google's
-                                        search result by using your best keywords set. We also analyze and audit your
-                                        current site before optimizing it.</p>
-                                </div>
-                            </div>
-                            <div class="down__item">
-                                <div class="down__item_image">
-                                    <div class="ellipse"><img src="./images/UI_UX.svg" alt="" class="down__img"></div>
-                                </div>
-                                <div class="down__item_description">
-                                    <h1 class="down__item_title">UI/UX Design</h1>
-                                    <p class="down__item_text">UI design on a product aims to beautify the appearance of the
-                                        product. While the UX design is designed to provide a pleasant experience when using
-                                        the product.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> 
+            </section>
+
             <section class="reviews" id="reviews">
                 <div class="reviews__title">
                     <h1 class="reviews__h1">
                         Some of my Creative work
                     </h1>
                     <p class="reviews__p">
-                        An all electric vehicle offering an estimated 20 plus miles of range per charge for an affordable
+                        An all electric vehicle offering an estimated 20 plus miles of range per charge for an
+                        affordable
                         price is how we define but passion and persistence are the principles used to accomplish it
                     </p>
                 </div>
-                <div class="reviews__images">
-                    <div class="reviews__block">
-                        <img src="./images/1.svg" alt="" class="reviews__block_img">
-                        <img src="./images/2.svg" alt="" class="reviews__block_img">
+                <div class="reviews_block">
+                    <div class="reviews__item">
+                        <img src="./images/1.svg" alt="" class="reviews__img">
                     </div>
-                    <div class="reviews__block">
-                        <img src="./images/3.svg" alt="" class="reviews__block_img">
-                        <img src="./images/4.svg" alt="" class="reviews__block_img">
+                    <div class="reviews__item">
+                        <img src="./images/2.svg" alt="" class="reviews__img">
+                    </div>
+                    <div class="reviews__item">
+                        <img src="./images/3.svg" alt="" class="reviews__img">
+                    </div>
+                    <div class="reviews__item">
+                        <img src="./images/4.svg" alt="" class="reviews__img">    
                     </div>
                 </div>
-            </section>  
+            </section>
+
             <section class="article" id="article">
                 <div class="article__text">
                     <h1 class="article__text_title">Our Pricing</h1>
@@ -291,9 +300,9 @@
                         <a href="" class="article__clink">Get Started</a>
                     </div>
                 </div>
-            </section>  
+            </section>
         </main>
-        
+
         <footer class="footer">
             <div class="footer__subscribe">
                 <h1 class="footer__sub_h1">Subscribe now</h1>
@@ -307,7 +316,8 @@
                             Cartrix
                         </div>
                         <div class="footer__inform_desc">
-                            An all Design Tools offering an estimated 20 plus Design of range per charge for an affordable
+                            An all Design Tools offering an estimated 20 plus Design of range per charge for an
+                            affordable
                             price is how we define but passion and persistence
                         </div>
                         <div class="footer__inform_images">
@@ -359,7 +369,7 @@
             </div>
         </footer>
     </div>
-        
+
 </body>
 
 </html>
